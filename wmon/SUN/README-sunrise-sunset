@@ -1,0 +1,18 @@
+scp csv file from PC to rPi
+Store csv file in /home/pi/Monitor/SUN
+
+vi NOAA_Solar_Calculations_year.csv:
+.,$ s/,/INSERT INTO sun (dtXXsunriseXXsunset) VALUES('/
+.,$ s/,/','/g
+.,$ s/XX/, /g
+
+Finally:
+cat NOAA_Solar_Calculations_year.csv | sed "s/\r/');/" > y2025.csv
+
+Then using database:
+
+sudo mysql -uroot -p
+connect weather
+source /home/pi/Monitor/SUN/y2025.csv
+
+NOTE: Use appropriate name for both cases of y2025.csv above

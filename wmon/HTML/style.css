@@ -1,0 +1,40 @@
+body {
+  background-color: LightGrey;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 160%;
+}
+h2 {
+  color: blue;
+  font-family: verdana;
+  font-size: 130%;
+}
+h3 {
+  color: blue;
+  font-family: verdana;
+  font-size: 100%;
+}
+input {
+  font-family: verdana;
+  font-size: 110%;
+  color: blue;
+  border: 2px;
+}
+table, tr, td {
+  color: blue;
+  font-family: verdana;
+  border: 0px;
+  font-size: 100%;
+}
+ul,li {
+  color: blue;
+  font-family: verdana;
+  font-size: 100%;
+}
+p {
+  color: blue;
+  font-family: verdana;
+  font-size: 100%;
+}

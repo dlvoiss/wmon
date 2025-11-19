@@ -1,0 +1,177 @@
+Wed 22 Jan 2025 08:56:05 PM PST
+Starting Weather & Fan Control Script
+(MainThread) PID: 448
+(MainThread) DIAG_LEVEL 0x0
+(MainThread) Running setup() at: 2025-01-22 20:56:10
+(MainThread) Setting up Raspberry PI pinouts
+(MainThread) Setting up GPIO for CPU fan control
+(MainThread) Setting up GPIO for Rain Gauge
+(MainThread) Setting up GPIO for Anemometer
+(MainThread) Core count = 4
+(MainThread) Setting up Database thread
+(MainThread) Setting up CPU Fan Control thread
+(MainThread) Setting up Coordinator thread
+(MainThread) Started Rain Gauge
+(MainThread) Running Rain Gauge process, PID: 841
+(MainThread) 2025-01-22 20:56:11: Day of month 21
+(MainThread) Started Anemometer
+(MainThread) Rain Gauge: 2025-01-22 20:56:11: change: today 22, yesterday 21
+(DBThread  ) Running DBThread
+(CPUFanControlThread) Running CPUFanControlThread
+(MainThread) Running Anemometer process, PID: 842
+(CPUFanControlThread) CPU Fan State (GPIO): OFF
+(CPUFanControlThread) CPU Fan ON Threshold: 55.0 C
+(CPUFanControlThread) CPU Fan OFF Threshold: 45.0 C
+(WeatherThread) Running WeatherThread
+(AveragingThread) Running AveragingThread
+(AveragingThread) Sending DB_INIT_AVG_TEMP(7)
+(CoordinatorThread) Running CoordinatorThread
+(DBThread  ) Database autocommit DISABLED, DIAG_LEVEL 0x0
+(WindVaneThread) Running WindVaneThread thread
+(DBThread  ) Added START record to windrain table
+(WeatherThread) REMOTE WEATHER CALLS DISABLED
+(DBThread  ) Processing db_get_avg_temp: DB_INIT_AVG_TEMP
+(AveragingThread) CURRENT_MONTH: 1
+(AveragingThread) day ix:   1031.0, running avg: 52.7
+(AveragingThread) night ix: 2421.0, running avg: 47.0
+(AveragingThread) high ix:   0.0, running avg: 56.8
+(AveragingThread) low ix: 0.0, running avg: 29.7
+(AveragingThread) init2 set to False
+(AveragingThread) Monthly statistics initialized from DB
+(WeatherThread) 1-Day & 30-Day readings initialized from DB
+(WeatherThread) 2025-01-22 20:56:14: DAY CHANGED from 0 to 22
+(WeatherThread) current_day: 0, cur_time.day: 22
+(WeatherThread) cur_day: 2025-01-22 00:00:00
+(WeatherThread) current_day set to: 22
+(WeatherThread) Current month data initialized for January from DB
+(WeatherThread) Temperature: MIN: 28.6, MAX: 66.7
+(WeatherThread) Humidity: MIN: 25.2, MAX: 92.9
+(WeatherThread) Pressure: MIN: 994.6, MAX: 1031.7
+(WeatherThread) All-time month data initialized for January from DB
+(WindVaneThread) ERROR: Wind direction: Invalid, 13296, 3.25450
+(WindVaneThread) ERROR: Wind direction: Invalid, 21427, 3.25787
+(WindVaneThread) ERROR: Wind direction: Invalid, 24029, 3.25650
+(WindVaneThread) ERROR: Wind direction: Invalid, 20648, 3.25588
+(WindVaneThread) ERROR: Wind direction: Invalid, 21790, 1.26887
+(WindVaneThread) ERROR: Wind direction: Invalid, 15044, 3.25750
+(WindVaneThread) ERROR: Wind direction: Invalid, 14545, 1.26737
+(WindVaneThread) ERROR: Wind direction: Invalid, 24693, 3.09650
+(WindVaneThread) ERROR: Wind direction: Invalid, 15446, 1.26625
+(WindVaneThread) ERROR: Wind direction: Invalid, 8062, 1.48725
+(WindVaneThread) ERROR: Wind direction: Invalid, 23827, 1.26713
+(WindVaneThread) ERROR: Wind direction: Invalid, 13576, 3.24950
+(WindVaneThread) ERROR: Wind direction: Invalid, 15419, 1.26825
+(WindVaneThread) ERROR: Wind direction: Invalid, 24675, 3.09063
+(WindVaneThread) ERROR: Wind direction: Invalid, 20029, 3.24800
+(WindVaneThread) ERROR: Wind direction: Invalid, 15381, 1.26487
+(WindVaneThread) ERROR: Wind direction: Invalid, 24686, 3.08637
+(WindVaneThread) ERROR: Wind direction: Invalid, 24694, 3.09213
+(WindVaneThread) ERROR: Wind direction: Invalid, 24699, 3.09050
+(WindVaneThread) ERROR: Wind direction: Invalid, 24692, 3.09163
+(WindVaneThread) ERROR: Wind direction: Invalid, 24002, 1.26575
+(WindVaneThread) ERROR: Wind direction: Invalid, 21263, 3.25113
+(WindVaneThread) ERROR: Wind direction: Invalid, 20425, 3.24737
+(WindVaneThread) ERROR: Wind direction: Invalid, 24696, 3.09150
+(WindVaneThread) ERROR: Wind direction: Invalid, 8571, 0.65600
+(WindVaneThread) ERROR: Wind direction: Invalid, 20547, 1.26713
+(WindVaneThread) ERROR: Wind direction: Invalid, 24696, 3.09300
+(WeatherThread) 2025-01-23 00:00:05: DAY CHANGED from 22 to 23
+(WeatherThread) current_day: 22, cur_time.day: 23
+(WeatherThread) cur_day: 2025-01-23 00:00:00
+(WeatherThread) current month: January(1)
+(WeatherThread) Sending current day high/low to averaging thread
+(WeatherThread) Sending AVG_DAY_HIGH_LOW(3)
+(WeatherThread) current_day set to: 23
+(AveragingThread) Recvd: AVG_DAY_HIGH_LOW(3)
+(AveragingThread) PRE: self.month: 0, month: 1
+(AveragingThread) PRE: self.min_avg_ix 0.0 self.min_avg 29.7
+(AveragingThread) PRE: self.max_avg_ix 0.0 self.max_avg 56.8
+(AveragingThread) self.month is 0
+(AveragingThread) Also, self.min_avg_ix == 0
+(AveragingThread) Also, self.max_avg_ix == 0
+(AveragingThread) POST: self.month: 1, month: 1
+(AveragingThread) POST: self.min_avg_ix 1.0 self.min_avg 31.6
+(AveragingThread) POST: self.max_avg_ix 1.0 self.max_avg 62.8
+(AveragingThread) avg_min_max_tempf_update(), month: January
+(AveragingThread) January(1): min ix: 1.0, 31.6; max ix: 1.0, 62.8
+(AveragingThread) Sending DB_UPDATE_AVG_HI_LO(12)
+(DBThread  ) Recvd: DB_UPDATE_AVG_HI_LO(12)
+(DBThread  ) [12, 1, 'January', 1.0, 31.6, 1.0, 62.8]
+(DBThread  ) db_update_hi_lo_avg()
+(DBThread  ) UPDATE monthavg running avg; db_id: 222
+(DBThread  ) Month: January, min_ix: 1.00, min_running_avg: 31.60
+(DBThread  ) Month: January, max_ix: 1.00, max_running_avg: 62.80
+(WindVaneThread) ERROR: Wind direction: Invalid, 23406, 1.26788
+(MainThread) Rain Gauge: 2025-01-23 00:06:12: change: today 23, yesterday 22
+(WindVaneThread) ERROR: Wind direction: Invalid, 24014, 3.25338
+(WindVaneThread) ERROR: Wind direction: Invalid, 22127, 1.26825
+(WindVaneThread) ERROR: Wind direction: Invalid, 23086, 3.25838
+(WindVaneThread) ERROR: Wind direction: Invalid, 21511, 3.25850
+(WindVaneThread) ERROR: Wind direction: Invalid, 23755, 4.06500
+(WindVaneThread) ERROR: Wind direction: Invalid, 15506, 3.24788
+(WindVaneThread) ERROR: Wind direction: Invalid, 14394, 1.26513
+(WindVaneThread) ERROR: Wind direction: Invalid, 22707, 3.25062
+(WindVaneThread) ERROR: Wind direction: Invalid, 24575, 3.25200
+(WindVaneThread) ERROR: Wind direction: Invalid, 24695, 3.10062
+(WindVaneThread) ERROR: Wind direction: Invalid, 15852, 1.26625
+(WindVaneThread) ERROR: Wind direction: Invalid, 15306, 1.26612
+(WindVaneThread) ERROR: Wind direction: Invalid, 15503, 1.26713
+(WindVaneThread) ERROR: Wind direction: Invalid, 13363, 1.26625
+(WindVaneThread) ERROR: Wind direction: Invalid, 8707, 1.49012
+(WindVaneThread) ERROR: Wind direction: Invalid, 15143, 1.26625
+(WindVaneThread) ERROR: Wind direction: Invalid, 20473, 1.26612
+(WindVaneThread) ERROR: Wind direction: Invalid, 23460, 4.05238
+(WindVaneThread) ERROR: Wind direction: Invalid, 24696, 3.09512
+(WindVaneThread) ERROR: Wind direction: Invalid, 24695, 3.09150
+(WindVaneThread) ERROR: Wind direction: Invalid, 22613, 3.25175
+(WindVaneThread) ERROR: Wind direction: Invalid, 8489, 1.48600
+(WindVaneThread) ERROR: Wind direction: Invalid, 23814, 1.26713
+(WindVaneThread) ERROR: Wind direction: Invalid, 24690, 3.09413
+(WindVaneThread) ERROR: Wind direction: Invalid, 24695, 3.09112
+(WindVaneThread) ERROR: Wind direction: Invalid, 20359, 1.26537
+(WindVaneThread) ERROR: Wind direction: Invalid, 14371, 3.25787
+(WindVaneThread) ERROR: Wind direction: Invalid, 24695, 3.09350
+(WindVaneThread) ERROR: Wind direction: Invalid, 24696, 3.09587
+(WindVaneThread) ERROR: Wind direction: Invalid, 24689, 3.24363
+(WindVaneThread) ERROR: Wind direction: Invalid, 24696, 3.09463
+(WindVaneThread) ERROR: Wind direction: Invalid, 8059, 1.48788
+(WindVaneThread) ERROR: Wind direction: Invalid, 22428, 3.25488
+(WindVaneThread) ERROR: Wind direction: Invalid, 23301, 4.06700
+(WindVaneThread) ERROR: Wind direction: Invalid, 21334, 2.09900
+(WindVaneThread) ERROR: Wind direction: Invalid, 22987, 4.05400
+(WindVaneThread) ERROR: Wind direction: Invalid, 22608, 4.05300
+(WindVaneThread) ERROR: Wind direction: Invalid, 22188, 4.06275
+(WindVaneThread) ERROR: Wind direction: Invalid, 22821, 4.05900
+(WindVaneThread) ERROR: Wind direction: Invalid, 22137, 4.06513
+(WindVaneThread) ERROR: Wind direction: Invalid, 24304, 2.10275
+(WindVaneThread) ERROR: Wind direction: Invalid, 22627, 4.04688
+(WindVaneThread) ERROR: Wind direction: Invalid, 21160, 4.05700
+(WindVaneThread) ERROR: Wind direction: Invalid, 15088, 0.43512
+(WindVaneThread) ERROR: Wind direction: Invalid, 21923, 3.25600
+(WindVaneThread) ERROR: Wind direction: Invalid, 21526, 1.26963
+(WindVaneThread) ERROR: Wind direction: Invalid, 15003, 1.26663
+(WindVaneThread) ERROR: Wind direction: Invalid, 4165, 2.38650
+(WindVaneThread) ERROR: Wind direction: Invalid, 14444, 1.26725
+(WindVaneThread) ERROR: Wind direction: Invalid, 12916, 2.38400
+(WindVaneThread) ERROR: Wind direction: Invalid, 24698, 3.09425
+(WindVaneThread) ERROR: Wind direction: Invalid, 20116, 4.05600
+(WindVaneThread) ERROR: Wind direction: Invalid, 20979, 4.05900
+(WindVaneThread) ERROR: Wind direction: Invalid, 21676, 2.09575
+(WindVaneThread) ERROR: Wind direction: Invalid, 24699, 3.09375
+(WindVaneThread) ERROR: Wind direction: Invalid, 23809, 2.09662
+(WindVaneThread) ERROR: Wind direction: Invalid, 24699, 3.09125
+(WindVaneThread) ERROR: Wind direction: Invalid, 22437, 3.25350
+(WindVaneThread) ERROR: Wind direction: Invalid, 15496, 1.26588
+(WindVaneThread) ERROR: Wind direction: Invalid, 20032, 2.09987
+(WindVaneThread) ERROR: Wind direction: Invalid, 7958, 1.48863
+(WindVaneThread) ERROR: Wind direction: Invalid, 13331, 1.26737
+(WindVaneThread) ERROR: Wind direction: Invalid, 14566, 1.26687
+(WindVaneThread) ERROR: Wind direction: Invalid, 24699, 3.08875
+(WindVaneThread) ERROR: Wind direction: Invalid, 22805, 2.10175
+(WindVaneThread) ERROR: Wind direction: Invalid, 24686, 2.10462
+(WindVaneThread) ERROR: Wind direction: Invalid, 22865, 2.10237
+(WindVaneThread) ERROR: Wind direction: Invalid, 13005, 3.25500
+(WindVaneThread) ERROR: Wind direction: Invalid, 20904, 4.05588
+(WindVaneThread) ERROR: Wind direction: Invalid, 20512, 1.26887
+(WindVaneThread) ERROR: Wind direction: Invalid, 23013, 2.10225
+(WindVaneThread) ERROR: Wind direction: Invalid, 24259, 4.05412

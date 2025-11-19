@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+.venv/
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Editor backup files
+*~
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Archive files
+*.tar
+
+# special headers
+config.php
+config.py
