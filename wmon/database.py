@@ -1368,8 +1368,6 @@ class DatabaseThread(gb.threading.Thread):
         init_1 = False
         init_30 = False
         not_sent = True
-        #user="pi",
-        #password="tashA2020!",
 
         try:
             self_db_conn = mariadb.connect(
